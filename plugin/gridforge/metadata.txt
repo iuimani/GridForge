@@ -1,0 +1,18 @@
+[general]
+name=GridForge
+qgisMinimumVersion=3.40
+description=Intelligent Electrical Distribution Engineering Platform
+version=0.1.0-alpha
+author=Isah Usman
+email=inboxisah@gmail.com
+
+about=GridForge is a modern QGIS plugin for electrical distribution network design, BOQ generation, cost estimation, and engineering validation.
+
+tracker=https://github.com/<iuimani/GridForge/issues
+repository=https://github.com/<iuimani/GridForge
+homepage=https://github.com/<iuimani/GridForge
+
+category=Plugins
+icon=resources/icons/gridforge.png
+experimental=True
+deprecated=False
