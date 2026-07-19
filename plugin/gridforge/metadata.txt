@@ -8,9 +8,9 @@ email=inboxisah@gmail.com
 
 about=GridForge is a modern QGIS plugin for electrical distribution network design, BOQ generation, cost estimation, and engineering validation.
 
-tracker=https://github.com/<iuimani/GridForge/issues
-repository=https://github.com/<iuimani/GridForge
-homepage=https://github.com/<iuimani/GridForge
+tracker=https://github.com/iuimani/GridForge/issues
+repository=https://github.com/iuimani/GridForge
+homepage=https://github.com/iuimani/GridForge
 
 category=Plugins
 icon=resources/icons/gridforge.png
