@@ -11,7 +11,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 
 from .app.bootstrap.application import Application
-from .app.views.main_dock import MainDock
+from .app.views.workspace import MainDock
 from .app.views.dialogs.new_project_dialog import NewProjectDialog
 from .app.views.dialogs.settings_dialog import SettingsDialog
 from .app.controllers.project_controller import ProjectController

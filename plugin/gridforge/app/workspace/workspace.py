@@ -1,5 +1,5 @@
 """
-GridForge Main Dock
+GridForge Workspace
 """
 
 from qgis.PyQt.QtCore import Qt
@@ -13,7 +13,7 @@ from qgis.PyQt.QtWidgets import (
 )
 
 
-class MainDock(QDockWidget):
+class Workspace(QDockWidget):
 
     def __init__(self, parent=None):
 
