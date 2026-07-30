@@ -5,9 +5,6 @@ GridForge QGIS Plugin
 Entry point for QGIS.
 """
 
-from .gridforge import Plugin
-
-
 def classFactory(iface):
     """
     QGIS calls this function when loading the plugin.
@@ -22,4 +19,8 @@ def classFactory(iface):
     Plugin
         The GridForge plugin instance.
     """
+    # Keep the package importable outside QGIS so domain services can be
+    # exercised by the test suite without a QGIS runtime.
+    from .gridforge import Plugin
+
     return Plugin(iface)

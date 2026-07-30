@@ -22,7 +22,7 @@ class NewProjectDialog(QDialog):
 
         self.setWindowTitle("New GridForge Project")
 
-        self.resize(450, 320)
+        self.resize(450, 400)
 
         layout = QVBoxLayout(self)
 
@@ -33,6 +33,8 @@ class NewProjectDialog(QDialog):
         self.client = QLineEdit()
 
         self.engineer = QLineEdit()
+
+        self.company = QLineEdit()
 
         self.country = QComboBox()
 
@@ -51,11 +53,20 @@ class NewProjectDialog(QDialog):
             "66 kV"
         ])
 
+        self.coordinate_system = QComboBox()
+        self.coordinate_system.addItems(["EPSG:32632", "EPSG:32631", "EPSG:32732"])
+
+        self.currency = QComboBox()
+        self.currency.addItems(["NGN", "USD", "EUR", "GHS", "KES", "ZAR"])
+
         form.addRow("Project Name:", self.project_name)
         form.addRow("Client:", self.client)
         form.addRow("Engineer:", self.engineer)
+        form.addRow("Company:", self.company)
         form.addRow("Country:", self.country)
         form.addRow("Voltage:", self.voltage)
+        form.addRow("Coordinate System:", self.coordinate_system)
+        form.addRow("Currency:", self.currency)
 
         layout.addLayout(form)
 

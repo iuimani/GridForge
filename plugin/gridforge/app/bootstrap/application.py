@@ -12,6 +12,10 @@ class Application:
         self.container = Container()
 
         self.logger = self.container.logger
+        self.project_controller = self.container.project_controller
+        self.material_controller = self.container.material_controller
+        self.boq_controller = self.container.boq_controller
+        self.validation_controller = self.container.validation_controller
 
     def start(self):
 

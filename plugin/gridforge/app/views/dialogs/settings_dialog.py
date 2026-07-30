@@ -6,7 +6,6 @@ from qgis.PyQt.QtWidgets import (
     QDialog,
     QLabel,
     QComboBox,
-    QCheckBox,
     QPushButton,
     QVBoxLayout,
     QFormLayout,
@@ -20,9 +19,9 @@ class SettingsDialog(QDialog):
 
         super().__init__(parent)
 
-        self.setWindowTitle("GridForge Settings")
+        self.setWindowTitle("Project Settings")
 
-        self.resize(400, 260)
+        self.resize(400, 230)
 
         layout = QVBoxLayout(self)
 
@@ -44,15 +43,8 @@ class SettingsDialog(QDialog):
             "EUR"
         ])
 
-        self.auto_save = QCheckBox()
-
-        self.auto_save.setChecked(True)
-
         form.addRow("Theme:", self.theme)
-
         form.addRow("Currency:", self.currency)
-
-        form.addRow("Auto Save:", self.auto_save)
 
         layout.addLayout(form)
 
